@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--全局启用或禁用在此配置下在任何映射器中配置的任何缓存-->
+        <setting name="cacheEnabled" value="true"/>
+
+        <!--设置驱动程序等待数据库响应的秒数-->
+        <setting name="defaultStatementTimeout" value="3000"/>
+
+        <!--启用从经典数据库列名A\u列到camel case经典Java属性名A列的自动映射-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+
+        <!--允许JDBC支持生成的密钥。需要兼容的驱动程序。
+        此设置强制生成的关键点将被使用（如果设置为true），
+        由于某些驱动程序拒绝兼容性，但仍在工作-->
+        <setting name="useGeneratedKeys" value="true"/>
+    </settings>
+</configuration>
